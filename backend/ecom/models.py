@@ -64,3 +64,17 @@ class Product(models.Model):
         thumbnail = File(thumb_io, name=image.name)
 
         return thumbnail
+    
+
+# class attribute(models.Model):
+#     name = models.CharField(max_length=255)
+#     slug = models.SlugField()
+
+#     class Meta:
+#         ordering = ('name',)
+    
+#     def __str__(self):
+#         return self.name
+    
+#     def get_absolute_url(self):
+#         return f'/{self.slug}/'    
